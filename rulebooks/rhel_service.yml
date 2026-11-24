@@ -27,5 +27,6 @@
             organization: "Default"
             job_args:
               extra_vars:
+                webhook_payload: "{{ event.payload }}"
                 alert_payload: "{{ event.payload }}"
                 alert_search_name: "{{ event.payload.search_name }}"
